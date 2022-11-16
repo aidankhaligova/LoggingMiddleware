@@ -21,6 +21,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseRequestResponseLogging();
+app.UseMiddleware<RequestResponseLoggingMiddleware>();
 
 app.Run();
